@@ -39,8 +39,10 @@
 <span style="color:red"><b>Step 2:</b></span> Observe the buffer <span style="color:yellow">'buf[128]'</span>. You can exploit it by inputting 128 <span style="color;yellow">'a'</span> characters followed by 4 bytes of any characters to check for overflow into EIP. If 4 <span style="color:yellow">'d'</span> characters are inserted into EIP, the offset for the program will be 128 characters plus the address of the <span style="color:yellow">shell()</span> function.<br>
 
 <span style="color:red"><b>Step 3:</b></span> Use gdb to locate the address of the <span style="color:yellow">shell()</span> function.<br>
+<img width="726" alt="bof3.1" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/bof3.1.png"><br>
 
 <span style="color:red"><b>Step 4:</b></span> To complete the buffer overflow, input 128 <span style="color:yellow">'a'</span> characters followed by the address of the <span style="color:yellow">shell()</span> function. Create a payload file named <span style="color:yellow">"inputbof3"</span> with these contents. Use this payload file in gdb to run the program and achieve the desired result. This approach is commonly used to test buffer overflow vulnerabilities and automate the process.<br>
+<img width="726" alt="bof3.2" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/bof3.2.png"><br>
 
 # Task 2: Code injection
 ## 2.1. Preparing shell code
