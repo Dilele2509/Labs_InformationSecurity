@@ -29,6 +29,16 @@ After successful implementation, we return to check the balance again, then the 
 
 ## 1.3: Transfer money illegitimately
 
+Để thực hiện việc tấn công CSRF khi người dùng Alice vô tình tải 1 tệp <span style="color:yellow">hidden_form.html</span> xuống. Ta sẽ tiến hành khởi chạy trang web trên. Ngay khi trang web vừa được khởi chạy thì người dùng Alice sẽ lập tức bị mất đi 1000 và tài khoản attacker sẽ được cộng thêm 1000:
+
+<img width="726" alt="lab3_1.3.1.png" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab3_1.3.1.png"><br>
+
+<img width="726" alt="lab3_1.3.2.png" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab3_1.3.2.png"><br>
+
+<img width="726" alt="lab3_1.3.3.png" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab3_1.3.3.png"><br>
+
+<img width="726" alt="llab3_1.3.4.png" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab3_1.3.4.png"><br>
+
 # Task 2: CSRF Countermeasure implementation
 
 ## 2.1: Solution 1:
