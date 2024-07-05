@@ -28,16 +28,18 @@ After successful implementation, we return to check the balance again, then the 
 <img width="726" alt="lab 3 1.2.3.png" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab3_1.2.3.png"><br>
 
 ## 1.3: Transfer money illegitimately
-
-Để thực hiện việc tấn công CSRF khi người dùng Alice vô tình tải 1 tệp <span style="color:yellow">hidden_form.html</span> xuống. Ta sẽ tiến hành khởi chạy trang web trên. Ngay khi trang web vừa được khởi chạy thì người dùng Alice sẽ lập tức bị mất đi 1000 và tài khoản attacker sẽ được cộng thêm 1000:
+To perform a CSRF attack when user Alice accidentally downloads a file <span style="color:yellow">hidden_form.html</span>. We will launch the above website. As soon as the website is launched, user Alice will immediately lose 1000 and the attacker account will gain 1000:
 
 <img width="726" alt="lab3_1.3.1.png" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab3_1.3.1.png"><br>
 
 <img width="726" alt="lab3_1.3.2.png" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab3_1.3.2.png"><br>
 
+Login into Attacker account, we can see this balance was increased
 <img width="726" alt="lab3_1.3.3.png" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab3_1.3.3.png"><br>
 
 <img width="726" alt="llab3_1.3.4.png" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab3_1.3.4.png"><br>
+
+We can see that when launching the malicious html file, the input form to perform transactions of the official website was called to the fake website and at the same time it made transactions to an unwanted account, the account by Attacker. At that time, the attack through the CSRF vulnerability was performed.
 
 # Task 2: CSRF Countermeasure implementation
 
