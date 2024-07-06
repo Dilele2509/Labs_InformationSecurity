@@ -44,5 +44,23 @@ We can see that when launching the malicious html file, the input form to perfor
 # Task 2: CSRF Countermeasure implementation
 
 ## 2.1: Solution 1:
+<span style="color:red"><b>Idea:</b></span> sử dụng CSRF Token, biện pháp này sẽ khởi tạo một giá trị ngẫu nhiên được tạo ra bởi máy chủ và được gửi đến client. Khi client gửi yêu cầu POST, token này sẽ được gửi kèm theo yêu cầu và máy chủ sẽ kiểm tra token để xác nhận yêu cầu hợp lệ.
+
+<span style="color:red"><b>Step 1:</b></span> ta sẽ cài đặt thư viện Flask-WTF để sử dụng CSRF token cho trang web <span style="color:yellow">target.py</span> của chúng ta<br>
+
+<img width="726" alt="lab3_2.1.1.png" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab3_2.1.1.png"><br>
+
+<span style="color:red"><b>Step 2:</b></span> Cấu hình CSRF token trong trang web: <br>
+
+<img width="726" alt="lab3_2.1.2.png" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab3_2.1.2.png"><br>
+
+ta sẽ tiến hành cấu hình để kiểm tra token trước khi sử dụng phương thức POST <br>
+<img width="726" alt="lab3_2.1.3.png" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab3_2.1.3.png"><br>
+
+Sau khi đã cấu hình hoàn tất ta tiến hành chạy lại trang web đồng thời mở trang web độc hại dùng để tấn công lỗ hỏng trên ta sẽ thấy việc tấn công thất bại và đã bị chặn lại:
+
+<img width="726" alt="lab3_2.1.4.png" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab3_2.1.4.png"><br>
+
+<img width="726" alt="lab3_2.1.5.png" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab3_2.1.5.png"><br>
 
 ## 2.2: Solution 2:
