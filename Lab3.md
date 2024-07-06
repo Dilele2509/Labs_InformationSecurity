@@ -73,3 +73,10 @@ After the configuration is complete, run the website again and open the maliciou
 <span style="color:red"><b>Step 2:</b></span> After setting it up, we will try to access transfer again from the attacker's site and we will see that the site has been blocked: <br>
 <img width="726" alt="lab3_2.2.1.png" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab3_2.2.1.png"><br>
 
+## 2.3: Solution 3:
+<span style="color:red"><b>Idea:</b></span> Use the SameSite Cookie Attribute to specify whether your cookie should be sent with cross-domain requests. Setting the SameSite attribute to "Strict" or "Lax" can help prevent CSRF attacks.<br>
+
+<span style="color:red"><b>Step 1:</b></span> <br>
+
+<img width="726" alt="lab3_2.3.1.png" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab3_2.3.2.png"><br>
+<span style="color:red"><b>Step 2:</b></span>  <br>
