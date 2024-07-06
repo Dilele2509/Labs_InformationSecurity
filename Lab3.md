@@ -76,7 +76,8 @@ After the configuration is complete, run the website again and open the maliciou
 ## 2.3: Solution 3:
 <span style="color:red"><b>Idea:</b></span> Use the SameSite Cookie Attribute to specify whether your cookie should be sent with cross-domain requests. Setting the SameSite attribute to "Strict" or "Lax" can help prevent CSRF attacks.<br>
 
-<span style="color:red"><b>Step 1:</b></span> <br>
+<span style="color:red"><b>Setting samesite cookie is strict</b></span> <br>
 
-<img width="726" alt="lab3_2.3.1.png" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab3_2.3.2.png"><br>
-<span style="color:red"><b>Step 2:</b></span>  <br>
+<img width="726" alt="lab3_2.3.1.png" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab3_2.3.1.png"><br>
+
+After successfully setting the results are similar to the above solutions
