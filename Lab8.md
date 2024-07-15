@@ -35,7 +35,7 @@ Finally, when I accessed outsider-10.9.0.5, I verified that all access to the ro
 
 ## Task 2: Setup rules on router to prevent computers on subnet 10.9.0.0/24 from accessing the internal web server (iweb).
 
-Firstly, like what I did in above, I continue to access into router to setup rules to prevent computers on subnet 10.9.0.0/24 from accessing the iweb-172.16.10.110</br>
+Firstly, as I did previously, I accessed the router to configure rules preventing computers on the 10.9.0.0/24 subnet from accessing iweb-172.16.10.110.</br>
 
 <span style="color:yellow">iptables -A FORWARD -s 10.9.0.0/24 -d 172.16.10.110 -j DROP:</span> This rule affects the FORWARD chain, which is used for packets passing through the system (typically from one network interface to another). It specifies that any packet with a source IP address in the range 10.9.0.0/24 and a destination IP address of 172.16.10.110 should be dropped or denied when attempting to traverse the system. This rule restricts forwarding traffic from the specified source network to the specified destination IP address.</br>
 <img width="726" alt="firewall6" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/firewall6.png"><br>
