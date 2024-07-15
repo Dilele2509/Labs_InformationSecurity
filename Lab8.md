@@ -6,19 +6,19 @@ First, after accessing the router, I listed the initial iptables policy.</br>
 
 <img width="726" alt="firewall1" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/firewall1.png"><br>
 
-Next, I set up rules on the router to block all access except for ping requests:</br>
+Next, I configured the router to block all access except for ping requests:</br>
 
 <span style="color:yellow">iptables -P INPUT DROP:</span> This command sets the default policy for incoming traffic (INPUT chain) to DROP, meaning any packet not matching a specific rule will be dropped or denied.</br>
 
 <span style="color:yellow">iptables -P OUTPUT DROP:</span> Similarly, this command sets the default policy for outgoing traffic (OUTPUT chain) to DROP, meaning all outgoing traffic is denied unless a specific rule permits it.</br>
 
-<span style="color:yellow">iptables -A INPUT -p icmp --icmp-type 8 -j ACCEPT:</span> This rule allows incoming ICMP Echo Request (ping) packets. It permits incoming ICMP packets with type 8, which are used for ping requests. These packets are accepted (ALLOWed). </br>
+<span style="color:yellow">iptables -A INPUT -p icmp --icmp-type 8 -j ACCEPT:</span> This rule allows incoming ICMP Echo Request (ping) packets. It permits incoming ICMP packets with type 8, which are used for ping requests. These packets are accepted (ALLOWed).</br>
 
-<span style="color:yellow">iptables -A OUTPUT -p icmp --icmp-type 0 -j ACCEPT:</span> This rule allows outgoing ICMP Echo Reply packets, which are responses to ping requests. It permits outgoing ICMP packets with type 0, which are the responses to ping requests. These packets are accepted (ALLOWed). </br>
+<span style="color:yellow">iptables -A OUTPUT -p icmp --icmp-type 0 -j ACCEPT:</span> The command iptables -A OUTPUT -p icmp --icmp-type 0 -j ACCEPT allows outgoing ICMP Echo Reply packets, which are responses to ping requests. It permits outgoing ICMP packets with type 0, which are the responses to ping requests. These packets are accepted (ALLOWed). </br>
 
-<span style="color:yellow">iptables -A INPUT -p tcp --dport 80 -j DROP:</span> This rule drops (DENYs) incoming TCP traffic on port 80. Port 80 is commonly used for HTTP web traffic. So, this rule is blocking incoming web traffic.</br>
+<span style="color:yellow">This rule drops (DENYs) incoming TCP traffic on port 80, commonly used for HTTP web traffic, thereby blocking incoming web traffic.</br>
 
-<span style="color:yellow">iptables -A INPUT -p tcp --dport 23 -j DROP:</span> This rule drops (DENYs) incoming TCP traffic on port 23. Port 23 is commonly used for Telnet. So, this rule is blocking incoming Telnet traffic.</br>
+<span style="color:yellow">This rule drops (DENYs) incoming TCP traffic on port 23, commonly used for Telnet, thereby blocking incoming Telnet traffic.</br>
 
 <span style="color:yellow">iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT:</span> This rule allows incoming traffic that is part of an existing or related connection. For example, if your system initiates an outgoing connection to a remote server, this rule allows the response traffic back into your system. It is used for established and related connections.</br>
 
@@ -29,7 +29,7 @@ Next, I set up rules on the router to block all access except for ping requests:
 Thirdly, I check again list policy of iptables</br>
 <img width="726" alt="firewall3" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/firewall3.png"><br>
 
-Finally, when I access into outsider-10.9.0.5 and as you can see, all access into router are blocked except ping</br>
+Finally, when I accessed outsider-10.9.0.5, I verified that all access to the router is blocked except for ping requests.</br>
 <img width="726" alt="firewall4" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/firewall4.png"><br>
 <img width="726" alt="firewall5" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/firewall5.png"><br>
 
