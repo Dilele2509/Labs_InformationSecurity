@@ -24,12 +24,34 @@
 
 1. cbc
 
-<img width="726" alt="lab11_2.4" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_2.4.png"><br>
+<img width="726" alt="lab11_3.1" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_3.1.png"><br>
 
-<img width="726" alt="lab11_2.4" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_2.4.png"><br>
+<img width="726" alt="lab11_3.2" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_3.2.png"><br>
 
-<img width="726" alt="lab11_2.4" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_2.4.png"><br>
+<img width="726" alt="lab11_3.3" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_3.3.png"><br>
 
-<img width="726" alt="lab11_2.4" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_2.4.png"><br>
+<img width="726" alt="lab11_3.4" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_3.4.png"><br>
+
 2. ecb
+
+<img width="726" alt="lab11_3.5" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_3.5.png"><br>
+
+<img width="726" alt="lab11_3.6" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_3.6.png"><br>
+
+<img width="726" alt="lab11_3.7" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_3.7.png"><br>
+
 3. cfb
+
+<img width="726" alt="lab11_3.8" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_3.8.png"><br>
+
+<img width="726" alt="lab11_3.9" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_3.9.png"><br>
+
+<img width="726" alt="lab11_3.10" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_3.10.png"><br>
+
+4. ofb
+
+<img width="726" alt="lab11_3.11" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_3.11.png"><br>
+
+<img width="726" alt="lab11_3.12" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_3.12.png"><br>
+
+<img width="726" alt="lab11_3.12" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_3.12.png"><br>
