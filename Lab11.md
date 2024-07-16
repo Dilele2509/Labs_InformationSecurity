@@ -54,4 +54,4 @@
 
 <img width="726" alt="lab11_3.12" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_3.12.png"><br>
 
-<img width="726" alt="lab11_3.12" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_3.12.png"><br>
+<img width="726" alt="lab11_3.13" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_3.13.png"><br>
