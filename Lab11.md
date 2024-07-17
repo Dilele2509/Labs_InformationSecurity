@@ -105,26 +105,26 @@ Similarly, I follow the same process for CBC mode: encrypt the file, corrupt the
 - ECB mode operates by independently encrypting each plaintext block, so a corruption in the 5th byte will only affect that specific block. Recovery is possible for all other unaffected blocks.
 - Identical plaintext blocks produce identical ciphertext blocks, potentially exposing the underlying structure of the plaintext.
 - It excels in parallel processing, allowing each block to be encrypted independently, which enhances speed for handling large datasets.
-- However, it lacks diffusion, meaning small changes in plaintext lead to predictable changes in the ciphertext.
+- However, it lacks diffusion, meaning small changes in plaintext lead to predictable changes in the ciphertext.</br>
 <img width="726" alt="lab11_exp1" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_exp1.png"><br>
 
 2. **Cipher Block Chaining (CBC):**
 - CBC mode XORs each plaintext block with the previous ciphertext block before encryption. Therefore, if the 5th byte is corrupted, it affects the entire subsequent block, restricting recovery to blocks preceding the corruption.
 - Chaining adds a layer of security as each block's encryption depends on the previous block's ciphertext.
 - A single-bit error in one block propagates through the entire chain of subsequent blocks, compounding the impact.
-- Unlike ECB, CBC does not support parallelization due to its reliance on the previous ciphertext block.
+- Unlike ECB, CBC does not support parallelization due to its reliance on the previous ciphertext block.</br>
 <img width="726" alt="lab11_exp2" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_exp2.png"><br>
 
 3. **Cipher Feedback (CFB):**
 - CFB mode offers error containment: corruption in the 5th byte affects only the current block, preserving the integrity of subsequent blocks up to the point of corruption.
 - Each block's encryption depends on the previous ciphertext block, but errors do not propagate beyond the current block boundary.
 - It supports bit-level encryption, allowing variable-length plaintext to be processed bit by bit.
-- While partially parallelizable, it does not match ECB's level of parallel processing capability.
+- While partially parallelizable, it does not match ECB's level of parallel processing capability.</>
 <img width="726" alt="lab11_exp3" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_exp3.png"><br>
 
 4. **Output Feedback (OFB):**
 - OFB mode operates without chaining between blocks. Thus, corruption in the 5th byte affects only the current block, allowing recovery up to the point of corruption.
 - Similar to CFB, errors within one block do not affect the integrity of other blocks.
 - OFB is highly parallelizable since there are no inter-block dependencies.
-- It supports bit-level encryption and can efficiently handle variable-length plaintext.
+- It supports bit-level encryption and can efficiently handle variable-length plaintext.</br>
 <img width="726" alt="lab11_exp4" src="https://raw.githubusercontent.com/Dilele2509/Labs_InformationSecurity/main/Images/lab11_exp4.png"><br>
